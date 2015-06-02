@@ -42,8 +42,10 @@ def hello():
     return render_insult(None)
 
 def render_insult(name):
-    response =  render_template('insult.html', name=name)
-    print response
+    adj1 = 'APISH'
+    adj2 = 'BALD-PATED'
+    noun = 'ABOMINATION'
+    response =  render_template('insult.html', name=name, adj1=adj1, adj2=adj2, noun=noun)
     return response
 
 if __name__ == "__main__":
